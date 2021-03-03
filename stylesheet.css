@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+*{
+		text-align: left;
+		background-color: #2f4f4f;
+		color: #ffffe0;
+		
+}
+
+ .text{
+	background-color: white;
+	font-size: 20px;
+	width: 350px;
+}
+
+.botan {
+	background-color: #006400;
+	text-align: right;
+}
+
+td { 
+	color: #ffffe0;
+	background-color: #008080;
+	width: 50%;
+}

@@ -72,18 +72,19 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
 <head>
 	<meta name= "viewport" content= "width=device-width, initial-scale= 1.0">
 	<meta http-equiv= "content-type" charset= "utf-8">
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
 	<title>ToDo</title>
 </head>
 <body>
 	<h1>ToDo</h1>
 
 	<section class= "main">
-		<h2>ToDoに投稿する</h2>
+		<h4>▼ToDoに投稿する</h4>
 
 		<!--投稿-->
 		<form method= "post">
-			<input type= "text" name= "txt">
-			<input type= "submit" value= "投稿">
+			<input class="text" type= "text" name= "txt">
+			<input class="botan" type= "submit" value= "投稿">
 		</form>
 
 		<table style= "border-collapse: collapse">
@@ -103,7 +104,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
 				<!--削除-->
 				<!--この時その投稿のidサーバーに送信される-->
 				<input type= "hidden" name= "del" value= "<?php echo $DATA[0]; ?>">
-				<input type= "submit" value= "削除">
+				<input class="botan" type= "submit" value= "削除">
 			</td>
 		</form>
 		</tr>
@@ -112,41 +113,3 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
 	</section>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
